@@ -35,6 +35,7 @@ public class ArraysDemo {
 			System.out.println(id2[i]);
 		}
 		
+		System.out.println(id1[7]);
 		
 //		System.out.println(id1[0]);
 //		System.out.println(id1[1]);
