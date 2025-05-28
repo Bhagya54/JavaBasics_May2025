@@ -15,7 +15,7 @@ public class DataTypesAndVariables {
  * true/false: boolean
  * 
  * 2. Non-Primitive data type: - class based
- * String,Array,object
+ * String,Array,object,ArrayList
  * case-sensitive
  * 
  * Wrapper class
