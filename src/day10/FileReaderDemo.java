@@ -15,7 +15,9 @@ public class FileReaderDemo {
  */
 	public static void main(String[] args) throws IOException {
 		String path="./src/day10/data";
+		
 		FileReader reader = new FileReader(path);
+		System.out.println("File is being read");
 //		System.out.println((char)reader.read());
 //		System.out.println((char)reader.read());
 //		System.out.println((char)reader.read());
