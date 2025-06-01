@@ -1,5 +1,6 @@
 package day11;
 
+import java.io.FileNotFoundException;
 import java.io.FileReader;
 
 public class ExceptionHandlingDemo {
@@ -14,25 +15,32 @@ public class ExceptionHandlingDemo {
 	 * 4. throw: intentionally throwing your own exception
 	 * 5. finally:which gets executed whether the exception is being handled or not
 	 * 
+	 * 2 types of exceptions:
+	 * 1. Compile Time - FileNotFound/IO Exception
+	 * 2. Runtime - 
+	 * Arithmetic 
+	 * ArrayIndexOutOfBoundsException
+	 * NullPointerException
+	 * NumberFormatException
 	 */
 
 	public static void main(String[] args) {
 		String path="./src/day10/data";
-		try {
+		
 		System.out.println("opening a file");	
-		FileReader reader = new FileReader(path);
+		try {
+			FileReader reader = new FileReader(path);
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("File is being read");
 		
-		}
 		
-		catch(Exception e) {
-			System.out.println("File is not found . Please check the path");
-			
-		}
 		
-		finally {
-			System.out.println("closing the file ");
-		}
+		
+		
+		
 
 	}
 
